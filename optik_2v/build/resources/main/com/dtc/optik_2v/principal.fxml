@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="540.0" prefWidth="960.0" stylesheets="@style/menu.css" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.dtc.optik_2v.ControllerPrincipal">
+   <children>
+      <BorderPane layoutX="343.0" layoutY="170.0" prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <center>
+            <AnchorPane fx:id="contenedor_principal" prefHeight="540.0" prefWidth="600.0" style="-fx-background-color: #141e30;" BorderPane.alignment="CENTER">
+               <children>
+                  <BorderPane fx:id="pane" layoutX="271.0" layoutY="93.0" prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <center>
+                        <ImageView fitHeight="467.0" fitWidth="806.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER">
+                           <image>
+                              <Image url="@image/logo.png" />
+                           </image>
+                        </ImageView>
+                     </center>
+                  </BorderPane>
+               </children>
+            </AnchorPane>
+         </center>
+         <top>
+            <AnchorPane prefHeight="60.0" prefWidth="100.0" styleClass="navM" BorderPane.alignment="CENTER">
+               <children>
+                  <JFXButton fx:id="btnCerrarSesion" blendMode="LIGHTEN" layoutX="14.0" layoutY="12.0" prefHeight="50.0" prefWidth="144.0" ripplerFill="#bdcbe4" text="Óptica Qualite" textAlignment="CENTER" textFill="#c1dee6" AnchorPane.bottomAnchor="13.0" AnchorPane.leftAnchor="14.0" AnchorPane.topAnchor="10.0">
+                     <font>
+                        <Font name="Symbol" size="18.0" />
+                     </font>
+                  </JFXButton>
+                  <JFXButton fx:id="btnEmpleados" blendMode="LIGHTEN" layoutX="176.0" layoutY="13.0" onAction="#empleados" ripplerFill="#bdcbe4" text="Empleados" textAlignment="CENTER" textFill="#c1dee6" AnchorPane.bottomAnchor="20.0" AnchorPane.leftAnchor="176.0" AnchorPane.topAnchor="13.0">
+                     <font>
+                        <Font name="Symbol" size="16.0" />
+                     </font>
+                  </JFXButton>
+                  <JFXButton fx:id="btnClientes" blendMode="LIGHTEN" layoutX="302.0" layoutY="10.0" onAction="#clientes" ripplerFill="#bdcbe4" text="Clientes" textAlignment="CENTER" textFill="#c1dee6" AnchorPane.bottomAnchor="20.0" AnchorPane.leftAnchor="302.0" AnchorPane.topAnchor="13.0">
+                     <font>
+                        <Font name="Symbol" size="16.0" />
+                     </font>
+                  </JFXButton>
+                  <JFXButton fx:id="btnAccesorios" blendMode="LIGHTEN" layoutX="395.0" layoutY="11.0" onAction="#accesorio" prefHeight="40.0" prefWidth="105.0" ripplerFill="#bdcbe4" text="Accesorios" textAlignment="CENTER" textFill="#c1dee6" AnchorPane.bottomAnchor="20.0" AnchorPane.leftAnchor="395.0" AnchorPane.topAnchor="13.0">
+                     <font>
+                        <Font name="Symbol" size="16.0" />
+                     </font>
+                  </JFXButton>
+                  <JFXButton fx:id="btnArmazon" blendMode="LIGHTEN" layoutX="517.0" layoutY="18.0" onAction="#armazon" prefHeight="38.0" prefWidth="110.0" ripplerFill="#bdcbe4" text="Armazones" textAlignment="CENTER" textFill="#c1dee6" AnchorPane.bottomAnchor="20.0" AnchorPane.leftAnchor="517.0" AnchorPane.topAnchor="13.0">
+                     <font>
+                        <Font name="Symbol" size="16.0" />
+                     </font>
+                  </JFXButton>
+                  <JFXButton fx:id="btnLentesContacto" blendMode="LIGHTEN" layoutX="651.0" layoutY="20.0" onAction="#lente_contacto" prefHeight="38.0" prefWidth="164.0" ripplerFill="#bdcbe4" text="Lentes de Contacto" textAlignment="CENTER" textFill="#c1dee6" AnchorPane.bottomAnchor="20.0" AnchorPane.leftAnchor="651.0" AnchorPane.topAnchor="13.0">
+                     <font>
+                        <Font name="Symbol" size="16.0" />
+                     </font>
+                  </JFXButton>
+                  <JFXButton fx:id="btnSoluciones" blendMode="LIGHTEN" layoutX="815.0" layoutY="13.0" onAction="#solucion" prefHeight="41.0" prefWidth="97.0" ripplerFill="#bdcbe4" text="Soluciones" textAlignment="CENTER" textFill="#c1dee6" AnchorPane.bottomAnchor="20.0" AnchorPane.leftAnchor="836.0" AnchorPane.topAnchor="13.0">
+                     <font>
+                        <Font name="Symbol" size="16.0" />
+                     </font>
+                  </JFXButton>
+                  <ImageView fitHeight="20.0" fitWidth="15.0" layoutX="169.0" layoutY="29.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="169.0" AnchorPane.topAnchor="25.0">
+                     <image>
+                        <Image url="@icon/persona.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="20.0" fitWidth="15.0" layoutX="294.0" layoutY="27.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="294.0" AnchorPane.topAnchor="25.0">
+                     <image>
+                        <Image url="@icon/persona.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="20.0" fitWidth="15.0" layoutX="387.0" layoutY="28.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="387.0" AnchorPane.topAnchor="25.0">
+                     <image>
+                        <Image url="@icon/accesorios.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="20.0" fitWidth="15.0" layoutX="511.0" layoutY="32.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="511.0" AnchorPane.topAnchor="25.0">
+                     <image>
+                        <Image url="@icon/lentes.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="20.0" fitWidth="15.0" layoutX="644.0" layoutY="31.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="644.0" AnchorPane.topAnchor="25.0">
+                     <image>
+                        <Image url="@icon/ojo.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="20.0" fitWidth="15.0" layoutX="828.0" layoutY="30.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="828.0" AnchorPane.topAnchor="25.0">
+                     <image>
+                        <Image url="@icon/solucion.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+         </top>
+      </BorderPane>
+   </children>
+</AnchorPane>
